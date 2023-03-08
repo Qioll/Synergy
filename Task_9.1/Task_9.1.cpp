@@ -4,7 +4,7 @@
 using namespace std;
 int main()
 {
-	setlocale(LC_ALL, "Russian");
+    setlocale(LC_ALL, "Russian");
     float initial_amount, loan_amount, percent, monthly_rate, total_bet, monthly_payment, percent_part, main_part, remaining_debt, mortgage_term, annuity_ratio;
     printf("Введите cумму взноса: ");
     scanf_s("%f", &initial_amount);
@@ -14,11 +14,6 @@ int main()
     scanf_s("%f", &percent);
     printf("Срок ипотеки (год): ");
     scanf_s("%f", &mortgage_term);
-
-    //initial_amount = 600000.0;
-    //loan_amount = 5000000.0;
-    //percent = 9.6;
-    //mortgage_term = 2.0;
 
     remaining_debt = loan_amount - initial_amount; //Остаток долга
 
@@ -48,7 +43,6 @@ int main()
         remaining_debt = remaining_debt - main_part;// Остаток долга
     }
 
-    /*printf(" Месяц  Остаток долга  Основной платёж  Процентная часть  Общая сумма платежа\n");*/
 
     cout
         << left
@@ -76,7 +70,6 @@ int main()
                 << left
                 << setw(20)
                 << mas[i][j];
-            //printf("%16f", mas[i][j]);
 
         }
         printf("\n");
